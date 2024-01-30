@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BaranovSize41"
         mc:Ignorable="d"
-        Title="BaranovSize41" MinHeight="450" MinWidth="800" FontFamily="TW Cen MT" Icon="ImageLogo/logo.png">
+        Title="BaranovSize41" MinHeight="450" MinWidth="800" FontFamily="Comic Sans MS" Icon="ImageLogo/logo.png">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="75"></RowDefinition>
@@ -14,7 +14,7 @@
         </Grid.RowDefinitions>
         <Image Source="ImageLogo/logo.png" HorizontalAlignment="Left"></Image>
         
-        <TextBlock Text="Size41" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        <TextBlock Text="ООО 41 Размер" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
         
         <Frame Grid.Row="1" Name="MainFrame" ContentRendered="MainFrame_ContentRendered" NavigationUIVisibility="Hidden"></Frame>
         

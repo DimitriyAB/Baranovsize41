@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BaranovSize41"
         mc:Ignorable="d"
-        Title="BaranovSize41" MinHeight="450" MinWidth="800" FontFamily="Comic Sans MS" Icon="ImageLogo/logo.png">
+        Title="BaranovSize41" MinHeight="450" MinWidth="800" FontFamily="Comic Sans MS" Icon="ImageLogo/icon.ico">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="75"></RowDefinition>

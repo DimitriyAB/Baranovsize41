@@ -18,3 +18,10 @@ D:\C# scripts\BaranovSize41\BaranovSize41\BaranovSize41\obj\Debug\BaranovSize41.
 D:\C# scripts\BaranovSize41\BaranovSize41\BaranovSize41\obj\Debug\BaranovSize41.csproj.CoreCompileInputs.cache
 D:\C# scripts\BaranovSize41\BaranovSize41\BaranovSize41\obj\Debug\BaranovSize41.exe
 D:\C# scripts\BaranovSize41\BaranovSize41\BaranovSize41\obj\Debug\BaranovSize41.pdb
+D:\C# scripts\BaranovSize41\BaranovSize41\BaranovSize41\obj\Debug\BaranovSize41_Content.g.cs
+D:\C# scripts\BaranovSize41\BaranovSize41\BaranovSize41\bin\Debug\EntityFramework.dll
+D:\C# scripts\BaranovSize41\BaranovSize41\BaranovSize41\bin\Debug\EntityFramework.SqlServer.dll
+D:\C# scripts\BaranovSize41\BaranovSize41\BaranovSize41\bin\Debug\EntityFramework.xml
+D:\C# scripts\BaranovSize41\BaranovSize41\BaranovSize41\bin\Debug\EntityFramework.SqlServer.xml
+D:\C# scripts\BaranovSize41\BaranovSize41\BaranovSize41\bin\Debug\ru\EntityFramework.resources.dll
+D:\C# scripts\BaranovSize41\BaranovSize41\BaranovSize41\obj\Debug\BaranovSize41.csproj.CopyComplete

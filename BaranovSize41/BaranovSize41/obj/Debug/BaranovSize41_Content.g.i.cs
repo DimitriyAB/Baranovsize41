@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagelogo/logo.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("baranovmodel.context.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("baranovmodel.tt")]
 
 

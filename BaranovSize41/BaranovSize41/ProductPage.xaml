@@ -35,13 +35,13 @@
                                 </Binding>
                             </Image.Source>
                         </Image>
-                        <TextBlock Text="{Binding ProductName}" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" FontSize="20" TextWrapping="Wrap"></TextBlock>
+                        <TextBlock Text="{Binding ProductName}" FontWeight="Bold" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" FontSize="20" TextWrapping="Wrap"></TextBlock>
                         <TextBlock Text="{Binding ProductDescription}" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" FontSize="20"></TextBlock>
                         <TextBlock Text="{Binding ProductProvider}" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" FontSize="20"></TextBlock>
                         <TextBlock Text="{Binding ProductCost}" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left" FontSize="20"></TextBlock>
                         
                         <StackPanel Orientation="Horizontal" Grid.Column="2">
-                            <TextBlock Text="{Binding ProductDiscountAmount, StringFormat = {}{0}%}" HorizontalAlignment="Right" Grid.Column="2" Grid.Row="0" VerticalAlignment="Center" FontSize="20"></TextBlock>
+                            <TextBlock Text="{Binding ProductCurrentDiscount, StringFormat={}{0}%}" FontWeight="Bold" HorizontalAlignment="Right" Grid.Column="2" Grid.Row="0" VerticalAlignment="Center" FontSize="30"></TextBlock>
                         </StackPanel>
                     </Grid>
                 </DataTemplate>

@@ -163,16 +163,6 @@
     <Resource Include="ImageLogo\logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BaranovModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>BaranovModel.Context.cs</LastGenOutput>
-      <DependentUpon>BaranovModel.edmx</DependentUpon>
-    </Content>
-    <Content Include="BaranovModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BaranovModel.edmx</DependentUpon>
-      <LastGenOutput>BaranovModel.cs</LastGenOutput>
-    </Content>
     <Resource Include="Product_import\picture.png" />
     <Resource Include="Product_import\B320R5.jpg" />
     <Resource Include="Product_import\D329H3.jpg" />
@@ -188,6 +178,18 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BaranovModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BaranovModel.edmx</DependentUpon>
+      <LastGenOutput>BaranovModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="BaranovModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BaranovModel.edmx</DependentUpon>
+      <LastGenOutput>BaranovModel.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

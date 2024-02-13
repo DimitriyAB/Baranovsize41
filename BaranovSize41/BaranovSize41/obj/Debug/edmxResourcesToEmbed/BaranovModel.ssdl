@@ -7,10 +7,8 @@
     <Property Name="OrderID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="OrderDate" Type="date" />
     <Property Name="OrderDeliveryDate" Type="date" Nullable="false" />
+    <Property Name="UserID" Type="int" />
     <Property Name="OrderPickupPoint" Type="int" Nullable="false" />
-    <Property Name="Surname" Type="nvarchar(max)" />
-    <Property Name="Name" Type="nvarchar(max)" />
-    <Property Name="Patronymic" Type="nvarchar(max)" />
     <Property Name="RecipientCode" Type="int" />
     <Property Name="OrderStatus" Type="nvarchar(max)" Nullable="false" />
   </EntityType>
@@ -62,7 +60,7 @@
     <Key>
       <PropertyRef Name="UserID" />
     </Key>
-    <Property Name="UserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="int" Nullable="false" />
     <Property Name="UserSurname" Type="nvarchar" MaxLength="100" Nullable="false" />
     <Property Name="UserName" Type="nvarchar" MaxLength="100" Nullable="false" />
     <Property Name="UserPatronymic" Type="nvarchar" MaxLength="100" Nullable="false" />
@@ -106,6 +104,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_Order_User">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="Order" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_User_Role">
     <End Role="Role" Type="Self.Role" Multiplicity="1" />
     <End Role="User" Type="Self.User" Multiplicity="*" />
@@ -135,6 +145,10 @@
     </AssociationSet>
     <AssociationSet Name="FK_Order_PickupPoint" Association="Self.FK_Order_PickupPoint">
       <End Role="PickupPoint" EntitySet="PickupPoint" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_User" Association="Self.FK_Order_User">
+      <End Role="User" EntitySet="User" />
       <End Role="Order" EntitySet="Order" />
     </AssociationSet>
     <AssociationSet Name="FK_User_Role" Association="Self.FK_User_Role">

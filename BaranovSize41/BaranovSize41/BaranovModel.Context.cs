@@ -13,18 +13,21 @@ namespace BaranovSize41
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class BaranovSize41Entities : DbContext
+    public partial class BaranovSize41Entities1 : DbContext
     {
-        public static BaranovSize41Entities _context;
+        private static BaranovSize41Entities1 _context;
 
-        public static BaranovSize41Entities GetContext()
+        public static BaranovSize41Entities1 GetContext()
         {
-            if (_context == null)
-                _context = new BaranovSize41Entities();
+            if(_context == null)
+            {
+                _context = new BaranovSize41Entities1();
+            }
             return _context;
         }
-        public BaranovSize41Entities()
-            : base("name=BaranovSize41Entities")
+
+        public BaranovSize41Entities1()
+            : base("name=BaranovSize41Entities1")
         {
         }
     

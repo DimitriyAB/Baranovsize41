@@ -25,3 +25,5 @@ D:\C# scripts\BaranovSize41\BaranovSize41\BaranovSize41\bin\Debug\EntityFramewor
 D:\C# scripts\BaranovSize41\BaranovSize41\BaranovSize41\bin\Debug\EntityFramework.SqlServer.xml
 D:\C# scripts\BaranovSize41\BaranovSize41\BaranovSize41\bin\Debug\ru\EntityFramework.resources.dll
 D:\C# scripts\BaranovSize41\BaranovSize41\BaranovSize41\obj\Debug\BaranovSize41.csproj.CopyComplete
+D:\C# scripts\BaranovSize41\BaranovSize41\BaranovSize41\obj\Debug\AuthPage.g.cs
+D:\C# scripts\BaranovSize41\BaranovSize41\BaranovSize41\obj\Debug\AuthPage.baml

@@ -27,9 +27,31 @@ namespace BaranovSize41
 
         List<Product> CurrentPageList = new List<Product>();
         List<Product> TableList;
-        public ProductPage()
+        public ProductPage(User user)
         {
             InitializeComponent();
+            if(user != null) 
+            {
+                FIOTB.Text = user.UserSurname + " " + user.UserName + " " + user.UserPatronymic;
+                switch(user.UserRole)
+                {
+                    case 1:
+                        RoleTB.Text = "Администратор"; break;
+                    case 2:
+                        RoleTB.Text = "Клиент"; break;
+                    case 3:
+                        RoleTB.Text = "Менеджер"; break;
+                }
+                
+                RoleTB.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                FIOTB.Text = "Гость";
+                RoleTB.Text = "Гость";
+                //RoleTB.Visibility = Visibility.Hidden;
+                
+            }
 
             var currentProduct = BaranovSize41Entities1.GetContext().Product.ToList();
 
